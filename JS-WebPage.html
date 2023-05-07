@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apples Vs Bananas</title>
+  <h1 text-align: center;>
+    <img src="AVBs.jpg" alt="banner" width=100% align="middle">
+    <script type="text/javascript" language="javascript">
+      dayName = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+      monName = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+      now = new Date();
+      document.write('<h1 style="text-align: center;">')
+      document.write("Today is "+ dayName[now.getDay()] + ", " + monName[now.getMonth()] +" "+ now.getDate())
+      document.write('</h1>')
+    </script>
+  </h1>
+
+  <script type="text/javascript" language="javascript">
+  function sayHello()
+  {
+    alert("Hello! Welcome to Apples vs Bananas website!");
+  }
+  function welcome()
+  {
+    //Ask's the person's name//
+    let name = prompt("What's your name?","Enter name here");
+    //Welcomes the person//
+    alert("Welcome to my web page, "+ name + "!");
+    if (name != null) {
+      document.getElementById("demoname").innerHTML = "Hello, " + name + "! Welcome to my website on Apples vs Bananas!!! Click on the buttons to learn more";
+    }
+
+  }
+
+  function confirmApples()
+  {
+      alert("There are more than 1,000 different types of apples in the world. I'm not joking. You either like them for fiber, taste, or you hate bananas. I don't care...")
+  }
+
+  function confirmBananas()
+  {
+    alert("Bananas!")
+  }
+  function saySomething(message)
+  {
+    alert(message)
+  }
+
+
+  </script>
+
+  <p id="hello">
+    <input type="button" onclick="sayHello()" value="Say Hello" /><br />
+  </p>
+  <p id="demoname">
+    <input type="button" value ="Enter Name Here" onclick="welcome()" >
+  </p>
+  <p id="apples">
+    <button onclick="confirmApples()">APPLES</button>
+  </p>
+  <p id="Bananas">
+    <button onclick="confirmBananas()">BANANAS</button>
+  </p>
+
+
+
+</head>
+<body bgcolor="Green">
+  <p> <!-- Add something here for top of page
+  -->
+  <table border="10" cellpadding="5" cellspacing="5" width="100%" height="100%">
+    <a name="top"></a>
+
+    <tr style="background-color:DarkRed">
+      <th colspan="2"><h1 style="color:white;"><center>Apples VS Bananas</center></h1></th>
+    </tr >
+
+    <tr style="background-color:#ffff99" >
+      <td><h3><center>Apples</center></h3>
+        <p>
+          Apples are red fruits that taste very well and juicy.
+          It has a crunchy surface, but a delicious core.
+          It is very rich in fiber, and has many healthy benefits.
+          Some of the major benefits include increasing immunity system or getting rid of viruses from the body.
+          There are more than 1,000 different types of apples because of cross-breeding and agriculture.
+        </p>
+      </td>
+      <td>
+        <img src="Apple.jpg" alt="A" width="350" height="350" alt="Bird" hspace="10" vspace="10"/>
+      </td>
+    </tr>
+
+    <th style="background-color:DarkRed" colspan="2"></th>
+
+    <tr style="background-color:#ffff99" >
+      <td><img src="Banana.jpg" alt="B" width="350" height="350" alt="B" hspace="10" vspace="10"/>
+    </td>
+    <td>
+<h3><center>Bananas</center></h3>
+      Bananas are yellow fruits that have a peel on the outside and have light berry on the inside.
+      They contain a lot of potassium, vitamins, and also help with body structures.
+      They are known as plaintains and can only be grown by herb and not by seed.
+
+    </td>
+  </tr>
+  <th style="background-color:DarkRed" colspan="2"></th>
+  </body>
+  </html>
